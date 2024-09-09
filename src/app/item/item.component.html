@@ -1,0 +1,11 @@
+<div class="item">
+  <h3>{{ item.title }}</h3>
+  <button (click)="expand()">Expandir</button>
+  <button (click)="access()">Acessar</button>
+  <button (click)="delete()">Excluir</button>
+
+  <div *ngIf="expanded">
+    <p>Gênero: {{ item.properties.genre }}</p>
+    <p>Faixas: {{ item.properties.tracks }}</p>
+  </div>
+</div>

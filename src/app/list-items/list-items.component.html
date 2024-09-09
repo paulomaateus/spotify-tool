@@ -1,0 +1,6 @@
+<div class="item-list">
+    <div *ngFor="let item of items">
+        <app-item [item]="item" (onDelete)="handleDelete(item.id)" (onAccess)="handleAccess(item.id)">
+        </app-item>
+    </div>
+</div>
